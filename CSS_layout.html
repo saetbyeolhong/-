@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .flex_box {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+</style>
+</head>
+<body>
+    <div class="container">
+  <div class="flex_box" style="flex: auto;">
+    <img src="../image/Paris" height="80px" style="float: left;">
+    <b>(flex: auto)</b>
+    The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France
+    Constructed from 1887. it is named after
+  </div>
+  <div class="flex_box" style="flex: auto;">
+    <img src="../image/Paris" height="80px" style="float: right;">
+    <b>(flex: auto)</b>
+    The Eiffel Tower the Champ de Mars in Paris, France. const the engineer Gustave Eiffel
+  </div>
+</div> 
+
+<!-- 두 번째 container: flex 1 + flex auto -->
+<div class="container">
+  <div class="flex_box" style="flex: 1;">
+    <img src="../image/Paris" height="80px" style="float: left;">
+    <b>(flex: 1)</b>
+    The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France
+    Constructed from 1887. it is named after
+  </div>
+  <div class="flex_box" style="flex: auto;">  <!-- ✅ 같은 container 안에 -->
+    <img src="../image/Paris" height="80px" style="float: right;">
+    <b>(flex: auto)</b>
+    The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France
+    Constructed from 1887. it is named after
+  </div>
+</div>  
+</body>
+</html>

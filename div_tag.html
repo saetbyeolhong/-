@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 5px;
+        }
+        .horizontal {
+            display: flex;
+        }
+        .horizontal {
+            flex: 1px solid black;
+            padding: 10px;
+            margin: 5px;
+        }
+        .container {
+            border: 1px solid #333;
+            padding: 20px;
+            margin: 10px;
+        }
+        
+         .highlight {
+            color: red;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <!--세로로 나누는 div-->
+    <div class="vertical">
+        <div>헤더 영역</div>
+        <div>본문 영역</div>
+        <div>푸터 영역</div>
+    </div>
+
+    <!--가로로 나누는 div-->
+    <div class="horizontal">
+        <div>왼쪽 영역</div>
+        <div>가운데 영역</div>
+        <div>오른쪽 영역 </div>
+    </div>
+
+    <!-- div로 큰 영역을 나눔 -->
+    <div class="container">
+    <h2>공지사항</h2>
+    <p>
+        이번 주 금요일에 <span class="highlight">정기 점검</span>이 있을 예정입니다.<br>
+        점검 시간 동안 서비스 이용이 제한될 수 있습니다.
+    </p>
+    </div>
+
+</body>
+</html>
